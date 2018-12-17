@@ -1,0 +1,17 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+    font-family: Verdana; 
+    background-color: #192533;
+    position: relative;
+    overflow: hidden;
+}
+#render_canvas {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
