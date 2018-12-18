@@ -292,6 +292,14 @@ let Quaternia;
 
         requestAnimationFrame(render);
     };
+    
+    window.addEventListener('resize', function () {
+        chaseCamera.aspect = window.innerWidth / window.innerHeight;
+        chaseCamera.updateProjectionMatrix();
+        overheadCamera.aspect = window.innerWidth / window.innerHeight;
+        overheadCamera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    }, false);
 
 
     (function () {

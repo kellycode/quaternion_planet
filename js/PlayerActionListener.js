@@ -18,6 +18,7 @@ PlayerActionListener = function (domElement) {
     this.onKeyDown = function (event) {
         switch (event.keyCode) {
             case 49: /*kb num 1*/
+            case 35: /*num pad 1*/
                 scope.actions.chaseCameraOn = !scope.actions.chaseCameraOn;
                 break;
             case 87: /*W*/
